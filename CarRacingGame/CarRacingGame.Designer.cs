@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarRacingGameForm));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -278,6 +279,7 @@
             this.Controls.Add(this.SolidLineLeft);
             this.Controls.Add(this.SolidLineRight);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CarRacingGameForm";
             this.Text = "CarRacingGame";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CarRacingGameForm_KeyDown);
